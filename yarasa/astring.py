@@ -7,7 +7,7 @@ import asyncio
 import os
 import sys
 import subprocess
-from asena_installer import hata, bilgi, onemli, soru
+from yarasa import hata, bilgi, onemli, soru
 
 from telethon import TelegramClient, events, version
 from telethon.errors import SessionPasswordNeededError, PhoneCodeInvalidError, PasswordHashInvalidError, PhoneNumberInvalidError
@@ -109,13 +109,13 @@ def main():
         if soup.title.string == "Create new application":
             bilgi(LANG['NEW_APP'])
             hashh = soup.find("input", {"name": "hash"}).get("value")
-            app_title = soru("Uygulamanızın adı ne olsun? (Otomatik oluşturmak için boş bırakın): ")
+            app_title = soru("Botunuzun adı nə olsun? (Avtomatik yaratmaq üçün boş buraxın): ")
             if app_title == '':
-                app_title = choice(["as", "ase", "asen", "madelineproto", "telethon", "pyrogram"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
+                app_title = choice(["ya", "yar", "yarasa", "madelineproto", "telethon", "pyrogram"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
             
-            app_shortname = soru("Uygulamanızın kısa adı ne olsun? (Otomatik oluşturmak için boş bırakın) \[5-32 karakter\]: ")
+            app_shortname = soru("Botunuzun qısa adı nə olsun? (Avtomatik yaratmaq üçün boş buraxın): \[5-32 karakter\]: ")
             if app_shortname == '':
-                app_shortname = choice(["as", "ase", "asen", "madelineproto", "telethon", "pyrogram"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
+                app_shortname = choice(["ya", "yar", "yarasa", "madelineproto", "telethon", "pyrogram"]) + choice(["", "-", "+", " "]) + choice(["user", "bot", "vue", "jsx", "python", "php"]) + choice([str(randint(10000, 99999)), ""])
             
             AppInfo = {
                 "hash": hashh,
@@ -128,7 +128,7 @@ def main():
             app = requests.post("https://my.telegram.org/apps/create", data=AppInfo, cookies=cookie).text
 
             if app == "ERROR":
-                hata("(!) Telegram otomatik açma işleminizi engellendi. Lütfen scripti yeniden başlatın.")
+                hata("(!) Telegram avtomatik açma işini əbgəllədi. Zəhmət olmasa, scripti yenidən başladın.")
                 exit(1)
 
             bilgi(LANG['CREATED'])
