@@ -17,7 +17,7 @@ def soru (soru):
    return console.input(f"[bold yellow]{soru}[/]")
 def logo (dil = "None"):
    surum = str(sys.version_info[0]) + "." + str(sys.version_info[1])
-   console.print(Panel(f"[bold blue]@YarasaBots Installer :wolf:[/]\n\n[bold cyan]Version: [/][i]2.1[/]\n[bold cyan]Python: [/][i]{surum}[/]\n[bold cyan]Dil: [/][i]{dil}[/]"), justify="center")                         
+   console.print(Panel(f"[bold blue]𐍔 𐌀  𐍂 𐌀 𐍃 𐌀 :wolf:[/]\n\n[bold cyan]Version: [/][i]2.1[/]\n[bold cyan]Python: [/][i]{surum}[/]\n[bold cyan]Dil: [/][i]{dil}[/]"), justify="center")                         
 def tamamlandi (saniye):
    console.print(Panel(f"[bold green]Qurulum Tamamlandı!\n[i]Botu {round(saniye)} saniye içinde qurdunuz.[/]\n\n[bold green]Bir neçə dəqiqə sonra hər hansısa bir söhbətdə .alive yazaraq test edə bilərsiniz. Keyiflə işlət qaqulya :)[/]"), justify="center")                         
                    
