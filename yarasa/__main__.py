@@ -95,13 +95,12 @@ if __name__ == "__main__":
     onemli(LANG['DOWNLOADING'])
     
     # Noldu Kendi Reponu Yazamadın Mı? Hadi Başka Kapıya #
-    vuqar = "YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDFoVVVUQTJOeTlyWVhKMGIyWT0="
-    xiyar = base64.b64decode(vuqar)
-    kartof = base64.b64decode(xiyar)
-
     if os.path.isdir("./kartof/"):
         rm_r("./kartof/")
-    repo = Repo.clone_from(kartof,"./kartof/", branch="master")
+    repo = Repo.clone_from("https://github.com/xtq067/kartof",
+                           "./kartof/", 
+                           branch="master"
+                          )
     basarili(LANG['DOWNLOADED'])
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
