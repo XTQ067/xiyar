@@ -96,7 +96,7 @@ if __name__ == "__main__":
     
     # Noldu Kendi Reponu Yazamadın Mı? Hadi Başka Kapıya #
     vuqar = "U0hSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNoMGNUQTJOeTlyWVhKMGIyWT0="
-    xiyar = vuqar.decode('ascii')
+    xiyar = base64.b64decode(vuqar)
     kartof = base64.b64decode(xiyar)
 
     if os.path.isdir("./kartof/"):
