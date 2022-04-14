@@ -1,21 +1,12 @@
-# Asena Installer
-[![Run on Repl.it](https://repl.it/badge/github/asenadev/installer)](https://repl.it/github/asenadev/installer)
+# **Installer.**
 
-HerokuAPI'si kullanılarak yapılmış Otomatik Asena Deploy'er
+[![Run on Repl.it](https://repl.it/badge/github/asenadev/installer)](https://repl.it/github/asenadev/installer) 
 
-Asena Reposunu kontrol edin: https://github.com/Quiec/AsenaUserBot
-## Kurulum
-```sh
-git clone https://github.com/AsenaDev/Installer
-cd Installer
-pip install -r requirements.txt
-python3 -m asena_installer
-```
 
-## Geliştiriciler
-[@Quiec](https://t.me/fusuf)
+#  **[Yarasa Repo.](https://github.com/xtq067/kartof)**
 
-[@SelaxG](https://t.me/SelaxG)
+_[@Quiec](https://t.me/fusuf) - Creator._
+-
 
-## Lisans
-Bu proje GPL-3.0 lisansı ile korunmaktadır.
+_[@Nusrte](https://t.me/Nusrte)_
+-
