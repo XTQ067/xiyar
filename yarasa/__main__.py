@@ -95,7 +95,7 @@ if __name__ == "__main__":
     onemli(LANG['DOWNLOADING'])
     
     # Noldu Kendi Reponu Yazamadın Mı? Hadi Başka Kapıya #
-    vuqar = "U0hSMGNITTZMeTluYVhSb2RXSXVZMjl0TDNoMGNUQTJOeTlyWVhKMGIyWT0="
+    vuqar = "YUhSMGNITTZMeTluYVhSb2RXSXVZMjl0TDFoVVVUQTJOeTlyWVhKMGIyWT0="
     xiyar = base64.b64decode(vuqar)
     kartof = base64.b64decode(xiyar)
 
