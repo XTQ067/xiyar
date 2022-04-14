@@ -1,14 +1,10 @@
-import heroku3
 from time import time
-import random
-import base64
-import requests
 from git import Repo
 from yarasa import *
 from .astring import main
-import os
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
+import os, sys, asycnio, random, base64, request, heroku3
 from telethon.tl.functions.channels import EditPhotoRequest, CreateChannelRequest
 from asyncio import get_event_loop
 from .language import LANG, COUNTRY, LANGUAGE, TZ
