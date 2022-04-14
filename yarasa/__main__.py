@@ -4,7 +4,7 @@ from yarasa import *
 from .astring import main
 from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
-import os, sys, asycnio, random, base64, request, heroku3
+import os, sys, random, base64, request, heroku3
 from telethon.tl.functions.channels import EditPhotoRequest, CreateChannelRequest
 from asyncio import get_event_loop
 from .language import LANG, COUNTRY, LANGUAGE, TZ
